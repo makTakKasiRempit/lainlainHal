@@ -6,11 +6,13 @@
 
 body {
   font-family: "Gotu", serif;
+  font-weight: bold;
   background-color: #f9f9f9;
   color: #333;
 }
 
 /* Navbar Styling */
+
 header {
   background-color: #fff;
   padding: 5px 20px;
@@ -32,9 +34,10 @@ header {
 /* Left Navbar */
 
 .navbar-left ul {
+  margin: 20px;
   display: flex;
   list-style: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 .navbar-left ul li {
@@ -53,31 +56,42 @@ header {
   color: #00bcd4;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  background-color: #eaf4f5;
-  color: #333;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.navbar-left .search-container {
+  background: #eaf4f5; /*container background color */
+  float: right;
+  border-radius: 30px;
 }
 
-.search-input {
-  padding: 8px 10px;
+.navbar-left input[type="text"] {
+  text-align: center;
+  padding: 6px;
+  font-size: 17px;
   border: none;
-  border-radius: 20px 0 0 3px;
-  outline: none;
-  font-family: "Julius Sans One", serif;
-  font-size: 14px;
+  outline: none; /* Removes outline when focused */
+  background: #eaf4f5; /* Matches the container background */
+  color: black; /* Ensure text is visible */
+  border-radius: 30px; /* Optional: matches the container */
 }
 
-.search-button {
-  padding: 8px 10px;
+.navbar-left .search-container button {
+  background: #eaf4f5; /* Matches the container background */
   border: none;
-  color: #333;
-  border-radius: 0 3px 3px 0;
   cursor: pointer;
-  font-size: 14px;
+  padding: 6px;
+  color: white; /* Ensures icon is visible */
+  font-size: 17px;
+}
+
+.navbar-left .search-container button i {
+  color: black; /* Ensures icon is visible */
+}
+
+.navbar-left .search-container button:hover {
+  background: #008c9e;
+}
+
+.navbar-left input[type="text"]::placeholder {
+  color: black;
 }
 
 /* Center Navbar */
@@ -91,9 +105,9 @@ header {
   margin-top: 5px;
   padding-top: 5px;
   content: "";
-  background: #000;
+  background: #004154;
   width: 100%;
-  height: 5px;
+  height: 1px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -149,7 +163,7 @@ header {
   color: #00bcd4;
 }
 
-/* landing page ahahahah*/
+/* ------------------------landing page ahahahah------------*/
 
 .row {
   display: flex;
@@ -159,7 +173,7 @@ header {
 
 .col-2 {
   flex-basis: 45%;
-  text-align: center; /* child of col-2 will be aligned, including buttons*/
+  text-align: center; /* penting because we need the items to be center aligned */
 }
 
 .col-2 h2 {
@@ -168,16 +182,17 @@ header {
   font-family: "Poltawski Nowy", serif;
   text-align: left;
   padding-left: 50px;
+  position: relative; /* yang ni je penting */
 }
 
 .col-2 h2::after {
   content: "";
-  background: #000;
-  width: 500px;
+  background-color: #000;
+  width: 70%;
   height: 2px;
-  position: relative;
-  display: block;
-  margin: 10px auto 0; /* line center ARGHHHHHHHHHHHHHHHHHHHHHHHH*/
+  position: absolute; /* yang ni je penting */
+  bottom: -10px;
+  left: 55px;
 }
 
 .col-2 p {
@@ -188,6 +203,17 @@ header {
   margin: 20px 0;
   text-align: left;
   font-family: "Jacques Francois", serif;
+  position: relative; /* yang ni je penting */
+}
+
+.col-2 .para::after {
+  content: "";
+  background-color: #000;
+  width: 70%;
+  height: 2px;
+  position: absolute; /* yang ni je penting */
+  bottom: -10px;
+  left: 55px;
 }
 
 .col-2 img {
@@ -197,11 +223,30 @@ header {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.estNbutton {
+  border: 3px solid #73ad21;
+  font-size: 16px;
+  margin-top: 20px;
+  position: absolute; /* yang ni je penting */
+  left: 200px;
+}
+
 .est {
   text-align: center;
   font-size: 16px;
   margin-top: 20px;
-  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #b6d3e3;
+  color: black;
+  padding: 8px 30px;
+  margin: 10px 0;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+  transition: background 0.5s;
 }
 
 /* Responsive Design */
