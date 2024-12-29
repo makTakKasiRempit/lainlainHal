@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polaroid | Oscent</title>
-    <link rel="stylesheet" href="checkout.css" />
+    <link rel="stylesheet" href="checkout1.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -42,7 +42,7 @@
         </div>
         <div class="links">
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="servicepage.html">Services</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">My Account</a></li>
           <li>
@@ -64,31 +64,34 @@
     </header>
 
     <!------main body--------------->
-    <main id="maininfo">
-      <div class="product-detail">
-        <div class="image-container">
-          <img
-            id="imageposition"
-            src="Oscent_Pictures/Polaroid 1.jpg"
-            alt=""
-            class="productimgs active"
-          />
-          <img
-            id="imageposition"
-            src="Oscent_Pictures/Polaroid 2.jpg"
-            alt=""
-            class="productimgs"
-          />
-          <button id="prevButton" class="slider-button"><</button>
-          <button id="nextButton" class="slider-button">></button>
-        </div>
-        <div class="product-info">
-          <h2>Picture Polaroid</h2>
-          <p><strong>MYR 2.50</strong></p>
-          <p>Polaroid for pictures</p>
+    <div class="product-detail">
+      <div class="image-container">
+        <img
+          id="imageposition"
+          src="Oscent_Pictures/Polaroid 1.jpg"
+          alt=""
+          class="productimgs active"
+        />
+        <img
+          id="imageposition"
+          src="Oscent_Pictures/Polaroid 2.jpg"
+          alt=""
+          class="productimgs"
+        />
+        <button id="prevButton" class="slider-button"><</button>
+        <button id="nextButton" class="slider-button">></button>
+      </div>
 
+      <div class="product-info">
+        <h2>Picture Polaroid</h2>
+        <p><strong>MYR 2.50</strong></p>
+        <p>Polaroid for pictures</p>
+
+        <br />
+        <br />
+        <div class="sideinfo">
+          <!--parent box-->
           <div class="quantity">
-            <label for="quantity">Quantity:</label>
             <button type="button" class="quantity-minus">-</button>
             <input
               type="number"
@@ -101,6 +104,7 @@
           </div>
           <br />
           <div class="actions">
+            <!--add to cart button-->
             <button
               type="button"
               class="addtocart"
@@ -109,7 +113,9 @@
             >
               Add to Cart
             </button>
-
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <ul>
@@ -118,15 +124,13 @@
               <hr />
               <br />
               <li>Material Paper</li>
+              <br />
+              <hr />
             </ul>
-            <br />
-            <hr />
-            <br />
           </div>
         </div>
       </div>
-    </main>
-    <br /><br />
+    </div>
 
     <script src="janji.js"></script>
     <script src="ProDetails.js"></script>

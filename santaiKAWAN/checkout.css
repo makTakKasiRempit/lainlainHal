@@ -124,12 +124,10 @@ header::after {
 
 .product-info {
   color: black;
-  margin-top: 50px;
-  margin-left: 50px;
   width: 600px;
-  word-wrap: break-word;
-  overflow: hidden;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-container {
@@ -156,12 +154,11 @@ header::after {
 #orderForm {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
 }
 
 /* Styling for dropdown boxes */
 #orderForm select {
-  width: 200px; 
+  width: 150px; 
   height: 50px; 
   background-color: #fff; 
   color: #ADADAD; 
@@ -186,8 +183,6 @@ header::after {
   display: flex;
   align-items: center;
   margin: 10px 0;
-  gap: 5px;
-  padding-left: 50px;
 }
 
 
@@ -207,16 +202,21 @@ header::after {
 }
 
 /*-adddddddddd to cart---------------button*/
-.actions {
-  display: flex;
-  padding-left: 80px;
 
+.sideinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions{
+  align-items: center;
 }
 
 .actions button {
   background-color: #004154;
   color: #fff;
-  padding: 10px 65px;
+  padding: 10px 70px; 
   cursor: pointer;
   border: 1px solid #000000;
 }
@@ -260,6 +260,10 @@ header::after {
 
 .slider-button:hover {
   opacity: 1;
+}
+
+ul{
+  list-style-type: none;
 }
 
 /*--------------DROP DOWN OPTIONS-----------------*/
