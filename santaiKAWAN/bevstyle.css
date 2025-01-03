@@ -255,32 +255,55 @@ h4 {
 .col-4:hover {
   transform: translateY(-5px);
 }
-
-.actions button {
-  background-color: #004154;
-  color: #fff;
-  padding: 10px 62px;
-  cursor: pointer;
-  border: 1px solid #000000;
-}
-
+/*-------------addition buttons-----------*/
+/*--------number of water-------------*/
 .quantity {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 5px;
+  margin: 10px 0;
+  background: transparent;
 }
 
-.quantity button {
-  background-color: #eaf4f5;
-  color: #000;
-  margin: 10px 0;
-  border: none;
+.quantity-btn {
+  background: transparent;
+  padding: 5px 15px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.quantity input {
-  padding: 10px 10px;
+.quantity-btn:hover {
+  background-color: #004154;
+  color: #fff;
+}
+
+.quantity-input {
   text-align: center;
-  background-color: #eaf4f5;
+  height: 30px;
+  width: 40px;
+  padding: 5px;
+  border: 1px solid #004154;
+  margin: 0 5px;
+  background: transparent;
+}
+
+/* Add-to-cart button style */
+.addtocart {
+  display: block;
+  width: 100%;
+  background-color: #004154;
+  color: #fff;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addtocart {
+  background-color: #004154;
 }
